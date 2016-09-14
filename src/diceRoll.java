@@ -9,9 +9,17 @@ public class diceRoll {
 		
 		System.out.print("Enter number of sides for dice: ");
 		int dice = input.nextInt();
-
-		System.out.println("Roll the dice? (yes/no)");
-	}
+		
+		
+		
+		Random roll = new Random();
+		System.out.println("Roll: ");
+		for (int i = 1; i <= 2; i++){
+		System.out.println(roll.ints(1, dice).findFirst().getAsInt() );
+		}
+	
+			
+		}
 	}
 
 	
